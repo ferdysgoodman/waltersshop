@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Store - Item Digital Murah & Terpercaya</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#EAB308',
+                        secondary: '#22C55E',
+                        accent: '#16A34A',
+                        dark: '#1E293B',
+                        light: '#FEFCE8'
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'slide-up': 'slideUp 0.5s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                        <i data-feather="zap" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">WALTER STORE</span>
+                </div>
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#produk" class="text-gray-600 hover:text-secondary transition-colors">Produk</a>
+                    <a href="#cara-order" class="text-gray-600 hover:text-secondary transition-colors">Cara Order</a>
+                    <a href="#testimoni" class="text-gray-600 hover:text-secondary transition-colors">Testimoni</a>
+                    <a href="https://t.me/waltervshop" target="_blank" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Order Sekarang
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <i data-feather="menu" class="w-6 h-6 text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#produk" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700">Produk</a>
+                <a href="#cara-order" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700">Cara Order</a>
+                <a href="#testimoni" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700">Testimoni</a>
+                <a href="https://t.me/waltervshop" target="_blank" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-white text-center font-medium">Order Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left animate-slide-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
+                        <span class="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
+                        <span class="text-sm font-medium text-secondary">Ready Stock 24/7</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark leading-tight mb-6">
+                        Solusi <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Item Digital</span><br>
+                        Murah, Cepat & Terpercaya
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 max-w-lg mx-auto lg:mx-0">
+                        WALTER STORE menyediakan berbagai kebutuhan digital dengan harga terjangkau dan pelayanan profesional. Netflix, Canva, ChatGPT, dan masih banyak lagi!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://t.me/waltervshop" target="_blank" class="group relative px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 overflow-hidden">
+                            <span class="relative z-10 flex items-center justify-center gap-2">
+                                <i data-feather="shopping-bag" class="w-5 h-5"></i>
+                                Order Sekarang
+                            </span>
+                            <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                        </a>
+                        <a href="#produk" class="px-8 py-4 bg-white text-dark border-2 border-gray-200 rounded-full font-semibold hover:border-secondary hover:text-secondary transition-all flex items-center justify-center gap-2">
+                            <i data-feather="grid" class="w-5 h-5"></i>
+                            Lihat Produk
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap gap-6 justify-center lg:justify-start mt-10 pt-8 border-t border-gray-200">
+                        <div class="flex items-center gap-2 text-gray-600">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i data-feather="shield-check" class="w-5 h-5 text-secondary"></i>
+                            </div>
+                            <span class="text-sm">100% Aman</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-600">
+                            <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                                <i data-feather="clock" class="w-5 h-5 text-primary"></i>
+                            </div>
+                            <span class="text-sm">Proses Cepat</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-600">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i data-feather="headphones" class="w-5 h-5 text-blue-500"></i>
+                            </div>
+                            <span class="text-sm">Support 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image/Illustration -->
+                <div class="relative animate-float">
+                    <div class="relative">
+                        <!-- Main Card -->
+                        <div class="bg-white rounded-3xl shadow-2xl p-6 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center">
+                                    <span class="text-2xl">🎬</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-dark">Netflix Premium</h3>
+                                    <p class="text-sm text-gray-500">1 Bulan • Aktif</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-3/4 bg-gradient-to-r from-red-500 to-red-600 rounded-full"></div>
+                                </div>
+                                <p class="text-xs text-gray-500">Valid hingga 30 hari</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Cards -->
+                        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 transform -rotate-6 animate-pulse-slow">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-gradient-to-br from-teal-400 to-teal-500 rounded-xl flex items-center justify-center">
+                                    <span class="text-lg">✨</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">Canva Pro</p>
+                                    <p class="text-xs text-green-500">✓ Aktif</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl p-4 transform rotate-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center">
+                                    <span class="text-lg">🤖</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm">ChatGPT Plus</p>
+                                    <p class="text-xs text-green-500">✓ Premium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="w-6 h-6 text-gray-400"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+                <div class="stat-item">
+                    <div class="text-3xl md:text-4xl font-bold mb-1 counter" data-target="5000">0</div>
+                    <div class="text-sm opacity-90">Order Selesai</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-3xl md:text-4xl font-bold mb-1 counter" data-target="1200">0</div>
+                    <div class="text-sm opacity-90">Pelanggan Puas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-3xl md:text-4xl font-bold mb-1">24/7</div>
+                    <div class="text-sm opacity-90">Jam Layanan</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-3xl md:text-4xl font-bold mb-1 counter" data-target="8">0</div>
+                    <div class="text-sm opacity-90">Produk Digital</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-4">
+                    <i data-feather="sparkles" class="w-4 h-4 text-secondary"></i>
+                    <span class="text-sm font-medium text-secondary">Produk Unggulan</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Pilihan Item Digital Terbaik</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Berbagai produk digital dengan harga terjangkau dan garansi resmi. Semua produk ready stock dan proses cepat!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Netflix -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-red-600 to-red-500"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-red-100 to-red-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🎬
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Netflix Premium</h3>
+                        <p class="text-sm text-gray-500 mb-4">Streaming film & series terbaik</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">1 Hari</span>
+                                <span class="font-bold text-secondary">Rp 5.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">3 Hari</span>
+                                <span class="font-bold text-secondary">Rp 10.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">7 Hari</span>
+                                <span class="font-bold text-secondary">Rp 15.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">1 Bulan ⭐</span>
+                                <span class="font-bold text-secondary">Rp 27.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Canva -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-teal-500 to-cyan-400"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-teal-100 to-cyan-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            ✨
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Canva Pro</h3>
+                        <p class="text-sm text-gray-500 mb-4">Desain grafis profesional</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">Member 1 Bulan</span>
+                                <span class="font-bold text-secondary">Rp 3.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">Member 1 Tahun</span>
+                                <span class="font-bold text-secondary">Rp 10.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">Head 1 Bulan</span>
+                                <span class="font-bold text-secondary">Rp 15.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">Head 1 Tahun (Edu) ⭐</span>
+                                <span class="font-bold text-secondary">Rp 125.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ChatGPT -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-green-600 to-emerald-500"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-100 to-emerald-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🤖
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">ChatGPT Plus</h3>
+                        <p class="text-sm text-gray-500 mb-4">AI assistant premium 1 tahun</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">1 Akun</span>
+                                <span class="font-bold text-secondary">Rp 100.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">Bulk 5 Akun ⭐</span>
+                                <span class="font-bold text-secondary">Rp 400.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2">
+                                <span class="text-xs text-gray-500">Hemat Rp 100.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-green-600 to-emerald-500 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TikTok Booster -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-black via-pink-600 to-black"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-pink-100 to-rose-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🌟
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">TikTok Booster</h3>
+                        <p class="text-sm text-gray-500 mb-4">Naikin engagement akunmu</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">1000 Followers</span>
+                                <span class="font-bold text-secondary">Rp 25.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">1000 Likes</span>
+                                <span class="font-bold text-secondary">Rp 15.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">1000 Views ⭐</span>
+                                <span class="font-bold text-secondary">Rp 7.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-pink-600 to-rose-500 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CapCut -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-purple-600 to-indigo-500"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-100 to-indigo-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🎥
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">CapCut Pro</h3>
+                        <p class="text-sm text-gray-500 mb-4">Edit video tanpa watermark</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">1 Month</span>
+                                <span class="font-bold text-secondary">Rp 25.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">1 Year ⭐</span>
+                                <span class="font-bold text-secondary">Rp 100.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YouTube -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-red-600 to-rose-600"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-red-100 to-rose-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🟥
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">YouTube Premium</h3>
+                        <p class="text-sm text-gray-500 mb-4">Nonton tanpa iklan + Music</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">1 Month</span>
+                                <span class="font-bold text-secondary">Rp 10.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">3 Months ⭐</span>
+                                <span class="font-bold text-secondary">Rp 35.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-red-600 to-rose-600 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VIU -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-yellow-100 to-orange-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🟨
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">VIU Premium</h3>
+                        <p class="text-sm text-gray-500 mb-4">Drama Korea & Asia terbaru</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-sm text-gray-600">3 Months Private</span>
+                                <span class="font-bold text-secondary">Rp 15.000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 bg-primary/10 -mx-2 px-2 rounded-lg">
+                                <span class="text-sm font-medium text-dark">12 Months Private ⭐</span>
+                                <span class="font-bold text-secondary">Rp 20.000</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gestun -->
+                <div class="product-card group bg-white rounded-2xl border border-gray-100 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden reveal">
+                    <div class="h-3 bg-gradient-to-r from-orange-500 to-red-500"></div>
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-orange-100 to-red-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+                            🛒
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Gestun Shopee PayLater</h3>
+                        <p class="text-sm text-gray-500 mb-4">Cairkan limit PayLater jadi uang</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center justify-center py-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl">
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">8%</div>
+                                    <div class="text-sm text-gray-600">Fee Penanganan</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://t.me/waltervshop" target="_blank" class="block w-full py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-medium text-center hover:shadow-lg transition-all">
+                            Chat Via Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order -->
+    <section id="cara-order" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
+                    <i data-feather="map" class="w-4 h-4 text-primary"></i>
+                    <span class="text-sm font-medium text-primary">Mudah & Cepat</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Cara Order di Walter Store</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Proses pemesanan yang simpel dan cepat, hanya dalam 4 langkah mudah!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative group reveal">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 text-center relative z-10">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-yellow-400 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <span class="text-2xl">1️⃣</span>
+                        </div>
+                        <h3 class="font-bold text-dark mb-2">Pilih Produk</h3>
+                        <p class="text-sm text-gray-500">Pilih produk digital yang kamu butuhkan dari daftar kami</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-primary to-secondary"></div>
+                </div>
+
+                <div class="relative group reveal">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 text-center relative z-10">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <span class="text-2xl">2️⃣</span>
+                        </div>
+                        <h3 class="font-bold text-dark mb-2">Chat Admin</h3>
+                        <p class="text-sm text-gray-500">Hubungi kami via Telegram untuk konfirmasi ketersediaan</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-primary to-secondary"></div>
+                </div>
+
+                <div class="relative group reveal">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 text-center relative z-10">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <span class="text-2xl">3️⃣</span>
+                        </div>
+                        <h3 class="font-bold text-dark mb-2">Pembayaran</h3>
+                        <p class="text-sm text-gray-500">Lakukan pembayaran sesuai nominal yang tertera</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-primary to-secondary"></div>
+                </div>
+
+                <div class="relative group reveal">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 text-center relative z-10">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-green-400 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <span class="text-2xl">4️⃣</span>
+                        </div>
+                        <h3 class="font-bold text-dark mb-2">Produk Dikirim</h3>
+                        <p class="text-sm text-gray-500">Akun/akses akan dikirim segera setelah pembayaran</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="mt-16 reveal">
+                <div class="bg-gradient-to-r from-dark to-slate-800 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
+                    
+                    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Siap Order?</h3>
+                            <p class="text-gray-300">Langsung chat admin kami untuk pemesanan cepat dan aman</p>
+                        </div>
+                        <a href="https://t.me/waltervshop" target="_blank" class="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-dark font-bold rounded-full hover:shadow-xl transition-all transform hover:-translate-y-1">
+                            <i data-feather="send" class="w-5 h-5"></i>
+                            Chat Telegram Sekarang
+                            <i data-feather="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full mb-4">
+                    <i data-feather="message-circle" class="w-4 h-4 text-secondary"></i>
+                    <span class="text-sm font-medium text-secondary">Testimoni Pelanggan</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Apa Kata Mereka?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ribuan pelanggan telah membuktikan pelayanan terbaik dari Walter Store</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 rounded-2xl p-6 reveal">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Netflix nya work parah! Sudah 3 bulanan masih aktif, admin nya juga fast respon. Mantap Walter Store! 👍"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/200x200/42" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-dark">Ahmad R.</div>
+                            <div class="text-sm text-gray-500">Netflix Premium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 reveal">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"ChatGPT Plus nya murah banget dan berfungsi dengan baik. Prosesnya juga cepat, ngga sampe 5 menit udah bisa dipakai!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/200x200/67" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-dark">Siti M.</div>
+                            <div class="text-sm text-gray-500">ChatGPT Plus</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 reveal">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 text-primary fill-current"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Gestun di sini aman dan cepat cairnya. Fee 8% worth it banget dibanding tempat lain. Recommended seller! 💯"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/200x200/89" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-dark">Budi K.</div>
+                            <div class="text-sm text-gray-500">Gestun PayLater</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl font-bold text-dark mb-4">Pertanyaan Umum</h2>
+                <p class="text-gray-600">Temukan jawaban untuk pertanyaan yang sering ditanyakan</p>
+            </div>
+
+            <div class="space-y-4 reveal">
+                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left">
+                        <span class="font-semibold text-dark">Apakah akun yang dibeli aman dan bergaransi?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-gray-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Ya, semua produk kami bergaransi resmi. Jika terjadi masalah pada akun, silakan hubungi kami segera untuk proses penggantian atau refund sesuai ketentuan yang berlaku.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left">
+                        <span class="font-semibold text-dark">Berapa lama proses pengiriman akun?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-gray-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Proses pengiriman sangat cepat, biasanya hanya membutuhkan waktu 5-15 menit setelah pembayaran dikonfirmasi. Untuk produk tertentu bisa lebih cepat!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left">
+                        <span class="font-semibold text-dark">Metode pembayaran apa yang tersedia?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-gray-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Kami menerima berbagai metode pembayaran: Transfer Bank (BCA, Mandiri, BNI, BRI), E-Wallet (Dana, OVO, GoPay, ShopeePay), dan QRIS untuk kemudahan transaksi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left">
+                        <span class="font-semibold text-dark">Bagaimana cara menghubungi admin?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-gray-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Anda bisa menghubungi kami melalui Telegram @waltervshop atau WhatsApp 082190424121. Kami online 24 jam dan siap membantu Anda!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <i data-feather="zap" class="w-6 h-6 text-dark"></i>
+                        </div>
+                        <span class="text-xl font-bold">WALTER STORE</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">Solusi item digital murah, cepat & terpercaya. Melayani pelanggan dengan sepenuh hati sejak 2020.</p>
+                    <div class="flex gap-4">
+                        <a href="https://t.me/waltervshop" target="_blank" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i data-feather="send" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://wa.me/6282190424121" target="_blank" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i data-feather="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i data-feather="send" class="w-4 h-4"></i>
+                            <span>@waltervshop</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-feather="phone" class="w-4 h-4"></i>
+                            <span>082190424121</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Jam Operasional</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Senin - Minggu</li>
+                        <li>24 Jam / 7 Hari</li>
+                        <li class="text-primary">Online Terus!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">Order & Tanya-Tanya Langsung • Telegram: @waltervshop</p>
+                <p class="text-gray-400 text-sm">© 2024 Walter Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+        <a href="https://t.me/waltervshop" target="_blank" class="group w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all animate-bounce hover:animate-none">
+            <i data-feather="send" class="w-6 h-6 text-white"></i>
+            <span class="absolute right-16 bg-blue-500 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Chat Telegram</span>
+        </a>
+        <a href="https://wa.me/6282190424121" target="_blank" class="group w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all">
+            <i data-feather="message-circle" class="w-6 h-6 text-white"></i>
+            <span class="absolute right-16 bg-green-500 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Chat WhatsApp</span>
+        </a>
+        <a href="#produk" class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all">
+            <i data-feather="shopping-bag" class="w-5 h-5 text-dark"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
